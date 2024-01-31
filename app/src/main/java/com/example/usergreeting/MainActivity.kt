@@ -39,11 +39,11 @@ fun UserDrivenApp() {
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.fillMaxSize()
     ) {
-        Text(text = "Hello, $output!")
+        Text( text = "Hello, $output!" )
         TextField(
             value = name,
             onValueChange = { name = it },
-            label = {Text("Enter your name: ")}
+            label = { Text( text = "Enter your name: " ) }
         )
         Button(
             onClick = {
